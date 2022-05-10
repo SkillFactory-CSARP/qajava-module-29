@@ -1,0 +1,16 @@
+Тестирования метода isTeenager(), который должен возвращать true, если в метод передаётся значение, соответствующее возрасту тинейджеров — тех, кому от 13 до 19 лет.
+
+Запущено 9 тестов со входными значениями:
+	age = 5,  expectedResult = false
+	age = 12, expectedResult = false
+	age = 13, expectedResult = true
+	age = 14, expectedResult = true
+	age = 16, expectedResult = true
+	age = 18, expectedResult = true
+	age = 19, expectedResult = true
+	age = 20, expectedResult = false
+	age = 50, expectedResult = false
+
+В результате 3 теста не прошли: age = 5, age = 12, age = 19.
+Т.е. верхняя граница интервала установлена не правильно, т.к. возраст 19 не попал в тинейжеры.
+Нижняя граница интервала отсутствует.
